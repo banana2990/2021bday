@@ -2,6 +2,7 @@
 <html lang="ko" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
             2021 김예진 탄신일 퀴즈
         </title>
@@ -10,19 +11,62 @@
             rel="stylesheet"
             integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
             crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/default.css">        
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/qna.css">        
+        <link rel="stylesheet" href="./css/animation.css">        
+        <link rel="stylesheet" href="./css/result.css">
     </head>
-    <body>
-        <section id="main">
-            <h3> 2021 김예진 탄신일 기념 퀴즈</h3>
-            <img src="./img/main.png" alt="mainImage">
-            <p></p>
-            <button type="button" class="btn btn-light"> Start </button>
-        </section>
-        <section id="qna">
 
-        </section>
-        <section id="result">
+    <body>
+        <div class="container">
+            <section id="main" class="mx-auto my-5 px-1 py-3">
+                <h2> 2021 김예진 탄신일 기념 퀴즈</h2>
+                <div class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto pb-1">
+                    <img src="./img/main.png" alt="mainImage" class="img-fluid">
+                </div>
+                <p>
+                    2020 김츠비 파티를 한 것이 얼마 되지 않은 느낌인데 어느절에 돌아와버린 김예진 탄신일입니다.
+                    아하하하하
+                    소정의 상품의 준비되어 있으니 즐거운 시간이 되시기 바랍니다.
+                    기타 내용내용 내용들!! 어예어예
+                    아래 버튼을
+                </p>
+                <button type="button" class="btn btn-light" onclick="js:begin()"> Start </button>
+            </section>
+
+            <section id="qna" class="mx-auto mt-5 px-1 py-3">
+                <div class="status mx-auto mt-5">
+                    <div class="statusBar">
+                    </div>
+                  </div>
+                  <div class="qBox my-5 py-3 mx-auto">
             
-        </section>
+                  </div>
+                  <div class="answerBox">
+            
+                  </div>
+            </section>
+            
+            <section id="result" class="mx-auto my-5 py-5 px-3">
+                <h1>당신의 결과는?!</h1>
+                <div class="resultname">
+          
+                </div>
+                <div id="resultImg" class="my-3 col-lg-6 col-md-8 col-sm-10 col-12 mx-auto">
+          
+                </div>
+                <div class="resultDesc">
+          
+                </div>
+            <button type="button" class="kakao mt-3 py-2 px-3" onclick="">공유하기</button>
+            </section>
+
+            <script src="./js/data.js" charset="utf-8"></script>
+            <script src="./js/start.js" charset="utf-8"></script>            
+            <script src="./js/share.js" charset="utf-8"></script>
+        </div>
     </body>
 </html>
