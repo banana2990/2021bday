@@ -3,17 +3,21 @@ const qna = document.querySelector("#qna");
 const result = document.querySelector("#result");
 
 const endPoint = 20;
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var correct = 0;
 
 function calResult(){
-  for(let i = 0; i < endPoint; i++){
-    var target = qnaList[i].a[select[i]];
-    for(let j = 0 ; i<target.length;j ++){
-        console.log(target," : target : ", j);
-    }
+  var result = 0;
+  if(correct < 20 && correct > 15){
+    result = 1;
+  }else if(correct < 16 && correct > 10){
+    result = 2;
+  }else if(correct < 11 && correct > 5){
+    result = 3;
+  }else if(correct < 6 && correct > 0){
+    result = 4;
+  }else if(correct == 0){
+    result = 5;
   }
-  console.log(select);
-  var result = select.indexOf(Math.max(...select));
   return result;
 }
 
@@ -67,11 +71,12 @@ function addAnswer(answerText, qIdx, idx){
       children[i].style.animation = "fadeOut 0.5s";
     }
     setTimeout(() => {
-      var target = qnaList[qIdx].a[idx].type;
-      for(let i = 0; i < target.length; i++){
-        select[target[i]] += 1;
+      var answer = qnaList[qIdx].a[idx].value;
+      
+      if(answer==1){
+        correct = correct+1;
       }
-
+      
       for(let i = 0; i < children.length; i++){
         children[i].style.display = 'none';
       }
