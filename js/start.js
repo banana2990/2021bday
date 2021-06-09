@@ -6,6 +6,12 @@ const endPoint = 20;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 function calResult(){
+  for(let i = 0; i < endPoint; i++){
+    var target = qnaList[i].a[select[i]];
+    for(let j = 0 ; i<target.length;j ++){
+        console.log(target," : target : ", j);
+    }
+  }
   console.log(select);
   var result = select.indexOf(Math.max(...select));
   return result;
