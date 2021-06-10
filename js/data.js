@@ -157,7 +157,7 @@ const qnaList = [
     q: '20. 김씨가 달성해보지 못한 신년 목표는',
     a: [
       { answer: '새로운 언어 공부해서 자격증 따기', value: '0' },
-      { answer: '1년에 책 100권 읽기', value: '0' },
+      { answer: '1년에 책 100권 책 읽기', value: '0' },
       { answer: '해로운 사람 멀리하기', value: '1' },
     ]
   }
