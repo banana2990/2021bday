@@ -7,13 +7,13 @@ var correct = 0;
 
 function calResult(){
   var result = 0;
-  if(correct < 20 && correct > 15){
+  if(correct < 20 && correct > 16){ //19,18,17
     result = 1;
-  }else if(correct < 16 && correct > 10){
+  }else if(correct < 17 && correct > 12){ //16,15,14,13
     result = 2;
-  }else if(correct < 11 && correct > 5){
+  }else if(correct < 13 && correct > 4){ //12,11,10,9,8,7,6,5
     result = 3;
-  }else if(correct < 6 && correct > 0){
+  }else if(correct < 5 && correct > 0){ //4,3,2,1
     result = 4;
   }else if(correct == 0){
     result = 5;
