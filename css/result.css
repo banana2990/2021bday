@@ -14,17 +14,17 @@
 }
 
   .resultname{
-    font-size: 16px;
+    font-size: 14px;
   }
   
   .resultDesc{
-    font-size: 14px;
+    font-size: 12px;
   }
   
   .kakao{
     color: ivory;
     background-color:saddlebrown;
-    font-size: 20px;
+    font-size: 18px;
     border: 0px;
     border-radius: 20px;
   }
@@ -37,7 +37,7 @@
   .gohome{
     color: white;
     background-color: pink;
-    font-size: 20px;
+    font-size: 18px;
     border: 0px;
     border-radius: 20px;
   }
